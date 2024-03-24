@@ -12,7 +12,7 @@ To set up this project, you can use the following command:
 npm ci
 ```
 
-## How to run tests
+## Execute Tests
 To run your automated API tests, use the following command:
 
 ```bash
