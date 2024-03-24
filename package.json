@@ -1,11 +1,10 @@
 {
-  "name": "playwright-api-test-demo",
+  "name": "playwright-api-automation-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test && npx playwright show-report",
-    "report": "npx playwright show-report"
+    "test": "npx playwright test && npx playwright show-report"
   },
   "keywords": [
     "playwright",
