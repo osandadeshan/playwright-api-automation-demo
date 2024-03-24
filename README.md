@@ -6,7 +6,7 @@ Playwright, a versatile end-to-end testing library developed by Microsoft, offer
 Explore Playwright API Testing Documentation [here.](https://playwright.dev/docs/api-testing)
 
 ## Installation
-To set up this project, you can use the following commands:
+To set up this project, you can use the following command:
 
 ```bash
 npm ci
