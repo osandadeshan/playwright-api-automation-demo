@@ -42,19 +42,19 @@ test.describe("Booking Test Suite", () => {
       bookingId = (await response.json()).bookingid;
     });
 
-    test("[PUT] Update an existing booking", async ({ apiFixture }) => {
+    test("[PUT] Fully update an existing booking", async ({ apiFixture }) => {
       const response = await apiFixture.put(
         `/booking/${bookingId}`,
         {
           firstname: "Eranga",
           lastname: "Nimalarathna",
-          totalprice: 100,
-          depositpaid: true,
+          totalprice: 1000,
+          depositpaid: false,
           bookingdates: {
-            checkin: "2023-10-17",
-            checkout: "2023-10-30",
+            checkin: "2023-11-17",
+            checkout: "2023-11-30",
           },
-          additionalneeds: "launch",
+          additionalneeds: "breakfast",
         },
         token
       );
