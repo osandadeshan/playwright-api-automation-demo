@@ -1,0 +1,11 @@
+{
+  "firstname": "Osanda",
+  "lastname": "Nimalarathna",
+  "totalprice": 111,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2024-04-01",
+    "checkout": "2024-05-01"
+  },
+  "additionalneeds": "Breakfast"
+}

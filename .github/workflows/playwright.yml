@@ -24,7 +24,7 @@ jobs:
 
       - name: Run Playwright API Tests
         run: npx playwright test
-        
+
       - name: Upload Playwright Report Artifact
         if: always()
         uses: actions/upload-artifact@v4

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test && npx playwright show-report"
+    "test-dev": "TEST_ENV=dev npx playwright test && npx playwright show-report",
+    "test-sit": "TEST_ENV=sit npx playwright test && npx playwright show-report",
+    "test-uat": "TEST_ENV=uat npx playwright test && npx playwright show-report"
   },
   "keywords": [
     "playwright",
