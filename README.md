@@ -22,7 +22,8 @@ When working on a project with multiple test environments such as development (d
 
 ### Configuration
 The configuration is defined using TypeScript interfaces and objects, allowing for easy management and customization based on the specific requirements of each environment.
-[playwright.config.ts](./playwright.config.ts)
+
+Look at: [playwright.config.ts](./playwright.config.ts)
 
 ### Usage
 - **Environment-Specific URLs:** Each environment (dev, sit, uat) has its own set of authentication API URL and base API URL. These URLs are defined in the respective configuration objects (`devConfig`, `sitConfig`, `uatConfig`).
