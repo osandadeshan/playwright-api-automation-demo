@@ -18,12 +18,10 @@ npm ci
 
 ## Handling Multiple Test Environments
 ### Overview
-When working on a project with multiple test environments such as development (dev), system integration testing (sit), and user acceptance testing (uat), managing configurations across these environments becomes crucial. The playwright.config.ts file in this project provides support for handling these multiple test environments efficiently.
+When working on a project with multiple test environments such as Development (DEV), System Integration Testing (SIT), and User Acceptance Testing (UAT), managing configurations across these environments becomes crucial. The [playwright.config.ts](./playwright.config.ts) file in this project provides support for handling these multiple test environments efficiently.
 
 ### Configuration
 The configuration is defined using TypeScript interfaces and objects, allowing for easy management and customization based on the specific requirements of each environment.
-
-Look at: [playwright.config.ts](./playwright.config.ts)
 
 ### Usage
 - **Environment-Specific URLs:** Each environment (dev, sit, uat) has its own set of authentication API URL and base API URL. These URLs are defined in the respective configuration objects (`devConfig`, `sitConfig`, `uatConfig`).
