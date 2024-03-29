@@ -31,7 +31,7 @@ The configuration is defined using TypeScript interfaces and objects, allowing f
 To add or modify configurations for additional environments, simply create a new configuration object following the same structure as `devConfig`, `sitConfig`, and `uatConfig`. Update the `config` object based on the desired environment selected during test execution.
 
 ### Execute Tests
-To run your automated API tests aginst Dev environment, use the following command:
+To run your automated API tests aginst DEV environment, use the following command:
 
 ```bash
 npm run test-dev
