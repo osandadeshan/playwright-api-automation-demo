@@ -16,9 +16,40 @@ To set up this project, you can use the following command:
 npm ci
 ```
 
-## Execute Tests
-To run your automated API tests, use the following command:
+## Handling Multiple Test Environments
+### Overview
+When working on a project with multiple test environments such as development (dev), system integration testing (sit), and user acceptance testing (uat), managing configurations across these environments becomes crucial. The playwright.config.ts file in this project provides support for handling these multiple test environments efficiently.
+
+### Configuration
+The configuration is defined using TypeScript interfaces and objects, allowing for easy management and customization based on the specific requirements of each environment.
+[playwright.config.ts](./playwright.config.ts)
+
+### Usage
+- **Environment-Specific URLs:** Each environment (dev, sit, uat) has its own set of authentication API URL and base API URL. These URLs are defined in the respective configuration objects (`devConfig`, `sitConfig`, `uatConfig`).
+- **Test Data Directory:** Environment-specific test data can be found in the `/src/test/resources/` directory, organized under separate subdirectories for each environment.
+
+### Customization
+To add or modify configurations for additional environments, simply create a new configuration object following the same structure as `devConfig`, `sitConfig`, and `uatConfig`. Update the `config` object based on the desired environment selected during test execution.
+
+### Execute Tests
+To run your automated API tests aginst Dev environment, use the following command:
 
 ```bash
-npm test
+npm run test-dev
 ```
+
+To run your automated API tests aginst SIT environment, use the following command:
+
+```bash
+npm run test-sit
+```
+
+To run your automated API tests aginst UAT environment, use the following command:
+
+```bash
+npm run test-uat
+```
+### Benefits
+- **Modular and Scalable:** The configuration setup allows for easy addition of new environments and modifications to existing configurations as the project evolves.
+- **Consistency:** Each environment has its own dedicated set of configurations, ensuring consistency and reliability across different testing stages.
+- **Flexibility:** Testers can seamlessly switch between environments without altering test scripts, improving productivity and efficiency during testing cycles.
