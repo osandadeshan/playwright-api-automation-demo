@@ -23,7 +23,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright API Tests
-        run: npm run test-dev
+        run: TEST_ENV=dev npx playwright test
 
       - name: Upload Playwright Report Artifact
         if: always()
