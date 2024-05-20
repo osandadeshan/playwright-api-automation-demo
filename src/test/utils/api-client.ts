@@ -53,7 +53,7 @@ export default class APIClient {
     const contentType = response.headers()["content-type"];
 
     if (contentType && contentType.includes("application/json")) {
-      console.log(await response.json());
+      console.log(JSON.stringify(await response.json(), null, 2));
     } else {
       console.log(await response.text());
     }
